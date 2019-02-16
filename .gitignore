@@ -6,7 +6,7 @@ curso-deploy-django/
 default
 django_vps.conf
 uwsgi_params
-Cursopymongodb/
+# Cursopymongodb/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
