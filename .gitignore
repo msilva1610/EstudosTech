@@ -2,10 +2,10 @@
 
 .vagrant/
 .vscode/
-curso-deploy-django/
-default
-django_vps.conf
-uwsgi_params
+# curso-deploy-django/
+# default
+# django_vps.conf
+# uwsgi_params
 # Cursopymongodb/
 
 # Byte-compiled / optimized / DLL files
