@@ -29,5 +29,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     srvmongodb01_config.vm.network :private_network,
                          ip: '192.168.90.10'
     # config.vm.provision :shell, path: "boot.sh"
-  end   
+  end  
+  #############################################################################
+  # MYSQL
+  ############################################################################# 
+  config.vm.define :srvmysqldb01 do |srvmysqldb01_config|
+    # srvmysqldb01_config.vm.network :forwarded_port, guest: 27017, host: 27017
+    srvmysqldb01_config.vm.hostname = 'srvmysqldb01'
+    srvmysqldb01_config.vm.network :private_network,
+                         ip: '192.168.90.20'
+    # config.vm.provision :shell, path: "boot.sh"
+  end     
 end
