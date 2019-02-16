@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # MONGODB
   ############################################################################# 
   config.vm.define :srvmongodb01 do |srvmongodb01_config|
-    # srvmongodb01_config.vm.network :forwarded_port, guest: 8000, host: 8000
+    srvmongodb01_config.vm.network :forwarded_port, guest: 27017, host: 27017
     srvmongodb01_config.vm.hostname = 'srvmongodb01'
     srvmongodb01_config.vm.network :private_network,
                          ip: '192.168.90.10'
